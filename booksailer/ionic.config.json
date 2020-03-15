@@ -1,0 +1,7 @@
+{
+  "name": "booksailer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
