@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>GettingStarted</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="6">
+        <ion-img [src]="user?.photoURL"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col>
+        <ion-title class="ion-text-center">Welcome {{user?.displayName}}</ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10">
+        <ion-text class="ion-text-center">
+          <b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in exercitationem iste vitae repellendus
+            quidem ullam odit repellat officiis, quae, reprehenderit quasi soluta doloremque atque quisquam nostrum
+            animi, ex maxime ab. Sequi aperiam error debitis neque iusto odio velit dolore assumenda asperiores nam. Vel
+            obcaecati distinctio sequi enim ipsa eius.
+          </b>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-button>
+        Let's Start
+      </ion-button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

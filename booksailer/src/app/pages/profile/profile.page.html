@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Top Donor <ion-icon name="bulb-outline"></ion-icon>
+      </ion-card-subtitle>
+      <br>
+      <ion-avatar>
+        <img [src]="user?.photoURL">
+      </ion-avatar>
+      <br>
+      <ion-card-title>{{user?.displayName}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+    <ion-button expand="block" fill="outline" color="danger" (click)="signout()">Log Out</ion-button>
+  </ion-card>
+</ion-content>

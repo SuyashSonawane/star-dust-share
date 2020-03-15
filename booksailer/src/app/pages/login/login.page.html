@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Book Sailer
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Welcome</ion-card-subtitle>
+      <ion-card-title>Login/SignUp below</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <firebase-ui (signInSuccessWithAuthResult)="successCallback($event)" (signInFailure)="errorCallback($event)">
+      </firebase-ui>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
